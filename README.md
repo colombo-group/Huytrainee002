@@ -1,1 +1,1 @@
-https://colombo-trainee.github.io/Huytrainee002/
+https://colombo-trainee.github.io/Huytrainee002/app/
