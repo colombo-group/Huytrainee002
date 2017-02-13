@@ -1,0 +1,19 @@
+#main{
+
+	.panel-heading{
+		margin-top: 30px;
+		div{
+			font-size: 23px;
+		}
+	}
+	.panel-body{
+		
+		a{
+			color:black;
+			font-size: 18px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}

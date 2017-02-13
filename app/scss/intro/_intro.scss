@@ -1,0 +1,21 @@
+#intro{
+	padding:30px;
+	#intro-title{
+		font-size: 23px;
+	}
+	#intro-content{
+		margin-top: 30px;
+	}
+	#intro-footer{
+		margin-top: 30px;
+		.col-md-3{
+			margin-left: -17px;
+			margin-right: 20px;
+		}
+	}
+	.col-md-4{
+		img{
+			width: 95%;
+		}
+	}
+}

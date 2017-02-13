@@ -1,0 +1,22 @@
+#menu{
+	// padding-top:20px;
+	.nav-header{
+		height: auto;
+		a{
+			line-height: 50px;
+		}
+		.nav-brand{
+			img{
+				margin-bottom:20px;
+			}
+		}
+	}
+	ul{
+		margin-top: 10px;
+		li{
+			.fa{
+				color:#005CB6;
+			}
+		}
+	}
+}

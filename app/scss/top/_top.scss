@@ -1,0 +1,54 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+#top{
+	background:#0466BE;
+	font-size:10px;
+	height:25px;
+	ul{
+		list-style: none;
+		li{
+			display: inline-block;
+			a{
+				line-height: 25px;
+				color:darken(white,30%);
+				border-right: 1px dotted darken(white,30%);
+				padding-left:15px;
+				padding-right: 15px;
+			}
+		}
+		li:last-child {
+			a{
+				border-right:none;
+			}
+		}
+	} 
+	span,i{
+		line-height: 25px;
+		font-size: 11px;
+		color: darken(white,30%);
+	}
+	.right-top{
+			
+			a{
+				line-height: 25px;
+				padding-left:15px;
+				padding-right: 15px;
+				border-left: 1px dotted darken(white,30%);
+				border-right:0px;
+			}
+			li:last-child {
+				a{border:none;margin-left:50px;}
+			} 
+			li:first-child {
+				a{border:none;}
+			} 
+			
+		}
+
+}

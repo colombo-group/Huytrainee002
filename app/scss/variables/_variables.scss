@@ -1,0 +1,19 @@
+@font-face {
+  font-family: bebasneue;
+  src: url(../fonts/BebasNeue.otf); }
+@font-face {
+  font-family: ptsan;
+  src: url(../fonts/PTC55F.ttf); }
+@font-face {
+  font-family: cambri;
+  src: url(../fonts/Cambria.ttf); }
+  @font-face{
+  	font-family: hevertical;
+  	src: url('../fonts/HelveticaNeueLTStd-UltLtCn.otf');
+  }
+ $color-gray:#8F8F8F;
+ $font-vertical:hevertical;
+$pt-font:ptsan;
+$beba-font: bebasneue;
+$cam-font:cambri;
+$background-footer:#E04C56;
