@@ -5560,8 +5560,8 @@ button.close {
   padding-left: 0;
   list-style: none;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 34px;
+  line-height: 32px;
   top: 90%; }
   .carousel-indicators li {
     display: inline-block;
@@ -5581,14 +5581,12 @@ button.close {
 
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
-  bottom: 20px;
+  left: 0%;
+  bottom: 30%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
   .carousel-caption .btn {
     text-shadow: none; }
@@ -5609,7 +5607,6 @@ button.close {
   .carousel-control .icon-next {
     margin-right: -10px; }
   .carousel-caption {
-    left: 20%;
     right: 20%;
     padding-bottom: 30px; }
   .carousel-indicators {
@@ -5865,7 +5862,7 @@ body {
     border-right: 0px; }
   #top .right-top li:last-child a {
     border: none;
-    margin-left: 50px; }
+    margin-left: 0px; }
   #top .right-top li:first-child a {
     border: none; }
 
@@ -5887,6 +5884,14 @@ body {
   #slide .slide {
     border: 5px solid #0466BE;
     box-shadow: 0px 0px 30px black; }
+    #slide .slide .carousel-caption {
+      background: rgba(255, 148, 0, 0.9);
+      width: 40%;
+      padding-left: 25px; }
+      #slide .slide .carousel-caption .title {
+        font-size: 25px; }
+      #slide .slide .carousel-caption .content {
+        font-size: 18px; }
 
 #intro {
   padding: 30px; }
@@ -5903,13 +5908,14 @@ body {
     width: 95%; }
 
 #offer {
-  height: 270px;
+  height: 300px;
   margin: 0 auto;
-  width: 100%;
+  width: 105%;
+  background: #FF9400;
   padding: 0px; }
   #offer #offer-center {
     height: 100%;
-    width: 120%; }
+    width: 100%; }
     #offer #offer-center #offer-title {
       background: #FF9400;
       height: 100%;
@@ -5917,38 +5923,44 @@ body {
       #offer #offer-center #offer-title div {
         height: 80%;
         background: white;
-        margin-top: 6%;
+        margin-top: 30px;
         margin-right: 3%;
         padding: 10%;
         padding-left: 5%;
-        font-size: 30px;
-        margin-left: 40%; }
-  #offer #offer-main {
-    margin-left: -15px;
-    height: 100%; }
-    #offer #offer-main .item {
-      padding-top: 15%;
-      color: white; }
-      #offer #offer-main .item span {
-        font-size: 24px; }
-      #offer #offer-main .item a {
-        color: #e6e6e6; }
-      #offer #offer-main .item a:hover {
-        text-decoration: none;
-        color: #E48605;
-        border: 2px solid #E48605; }
-    #offer #offer-main #offer1 {
-      height: 100%;
-      background: url("../img/home/offer-img2.png");
-      background-repeat: no-repeat; }
-    #offer #offer-main #offer2 {
-      height: 100%;
-      background: url("../img/home/offer-img3.png");
-      background-repeat: no-repeat; }
-    #offer #offer-main #offer3 {
-      height: 100%;
-      background: url("../img/home/offer-img4.png");
-      background-repeat: no-repeat; }
+        font-size: 25px;
+        margin-left: 33%;
+        margin-bottom: 30px; }
+  #offer .col-md-8 {
+    height: 100%;
+    margin-left: -10px; }
+    #offer .col-md-8 .item {
+      margin-left: -19px;
+      height: 100%; }
+      #offer .col-md-8 .item .img {
+        padding-left: 0px;
+        height: 100%;
+        width: 100%; }
+      #offer .col-md-8 .item img {
+        width: 106%;
+        height: 100%; }
+    #offer .col-md-8 .img {
+      position: relative; }
+      #offer .col-md-8 .img .text {
+        color: white;
+        position: absolute;
+        top: 150px;
+        left: 30px; }
+      #offer .col-md-8 .img p {
+        font-size: 25px; }
+      #offer .col-md-8 .img .content {
+        font-size: 13px; }
+      #offer .col-md-8 .img a {
+        color: #cccccc;
+        padding: 5px; }
+      #offer .col-md-8 .img a:hover {
+        color: #FF9400;
+        border: 1px solid #FF9400;
+        text-decoration: none; }
 
 #main .panel-heading {
   margin-top: 30px; }
@@ -6000,4 +6012,6 @@ body {
       font-size: 12px;
       margin-left: 0px; }
   #footer #footer3 .info2 img {
-    width: 30px; }
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; }
