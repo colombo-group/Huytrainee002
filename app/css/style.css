@@ -5996,6 +5996,8 @@ body {
   margin-top: 30px; }
   #main .panel-heading div {
     font-size: 23px; }
+  #main .panel-heading img {
+    width: 100%; }
 
 #main .panel-body a {
   color: black;
