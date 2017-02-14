@@ -15,6 +15,14 @@
   font-family: hevertical;
   src: url("../fonts/HelveticaNeueLTStd-UltLtCn.otf"); }
 
+@font-face {
+  font-family: robo;
+  src: url("../fonts/Roboto-Light.ttf"); }
+
+@font-face {
+  font-family: robo-con;
+  src: url("../fonts/Roboto-Condensed.ttf"); }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -3939,9 +3947,7 @@ tbody.collapse.in {
     float: left !important; }
   .navbar-right {
     float: right !important;
-    margin-right: -15px; }
-    .navbar-right ~ .navbar-right {
-      margin-right: 0; } }
+    margin-right: 30px; } }
 
 .navbar-default .navbar-brand {
   color: #777; }
@@ -5827,17 +5833,27 @@ button.close {
 
 body {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  font-family: robo; }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
+.container-fluid {
+  padding: 0px; }
+
 #top {
   background: #0466BE;
+  width: 100%;
   font-size: 10px;
   height: 25px; }
+  #top .left-top {
+    float: left;
+    width: 70%; }
+    #top .left-top ul {
+      margin-left: -55px; }
   #top ul {
     list-style: none; }
     #top ul li {
@@ -5851,39 +5867,46 @@ body {
     #top ul li:last-child a {
       border-right: none; }
   #top span, #top i {
-    line-height: 25px;
+    line-height: 20px;
     font-size: 11px;
     color: #b3b3b3; }
-  #top .right-top a {
-    line-height: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-left: 1px dotted #b3b3b3;
-    border-right: 0px; }
-  #top .right-top li:last-child a {
-    border: none;
-    margin-left: 0px; }
-  #top .right-top li:first-child a {
-    border: none; }
+  #top .right-top {
+    margin-right: 0px; }
+    #top .right-top a {
+      line-height: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-left: 1px dotted #b3b3b3;
+      border-right: 0px; }
+    #top .right-top li:last-child a {
+      border: none;
+      margin-left: 0px; }
+    #top .right-top li:first-child a {
+      border: none; }
 
-#menu .nav-header {
-  height: auto; }
-  #menu .nav-header a {
-    line-height: 50px; }
-  #menu .nav-header .nav-brand img {
-    margin-bottom: 20px; }
-
-#menu ul {
-  margin-top: 10px; }
-  #menu ul li .fa {
-    color: #005CB6; }
+#menu {
+  text-align: left; }
+  #menu .left-menu {
+    float: left;
+    width: 50%; }
+    #menu .left-menu .container {
+      width: 50%;
+      position: relative; }
+    #menu .left-menu img {
+      margin-right: 0px;
+      margin-bottom: 20px; }
+  #menu ul {
+    margin-top: 10px; }
+    #menu ul li .fa {
+      color: #005CB6; }
 
 #slide {
   background: url("../img/home/background-slide.png");
-  padding: 20px; }
+  padding: 20px;
+  margin-top: -20px; }
   #slide .slide {
     border: 5px solid #0466BE;
-    box-shadow: 0px 0px 30px black; }
+    box-shadow: 0px 0px 6px black; }
     #slide .slide .carousel-caption {
       background: rgba(255, 148, 0, 0.9);
       width: 40%;
@@ -5908,56 +5931,63 @@ body {
     width: 95%; }
 
 #offer {
-  height: 300px;
+  width: 100%;
+  height: 270px;
   margin: 0 auto;
-  width: 105%;
+  width: auto;
   background: #FF9400;
-  padding: 0px; }
+  padding: 0px;
+  display: block; }
   #offer #offer-center {
-    height: 100%;
-    width: 100%; }
+    height: 100%; }
     #offer #offer-center #offer-title {
       background: #FF9400;
-      height: 100%;
-      margin-left: -30px; }
+      height: 100%; }
       #offer #offer-center #offer-title div {
         height: 80%;
         background: white;
         margin-top: 30px;
-        margin-right: 3%;
+        margin-left: 20px;
         padding: 10%;
         padding-left: 5%;
-        font-size: 25px;
-        margin-left: 33%;
+        font-size: 40px;
+        width: 250px;
         margin-bottom: 30px; }
-  #offer .col-md-8 {
-    height: 100%;
-    margin-left: -10px; }
-    #offer .col-md-8 .item {
-      margin-left: -19px;
+        #offer #offer-center #offer-title div p {
+          margin: 0px;
+          font-family: hevertical;
+          text-transform: uppercase;
+          font-weight: bold; }
+  #offer .col-md-9 {
+    height: 100%; }
+    #offer .col-md-9 .item {
+      float: left;
+      margin-left: 0px;
       height: 100%; }
-      #offer .col-md-8 .item .img {
+      #offer .col-md-9 .item .img {
         padding-left: 0px;
         height: 100%;
         width: 100%; }
-      #offer .col-md-8 .item img {
-        width: 106%;
+      #offer .col-md-9 .item img {
+        width: 117%;
         height: 100%; }
-    #offer .col-md-8 .img {
+    #offer .col-md-9 .img {
+      float: left;
       position: relative; }
-      #offer .col-md-8 .img .text {
+      #offer .col-md-9 .img .text {
         color: white;
         position: absolute;
         top: 150px;
         left: 30px; }
-      #offer .col-md-8 .img p {
-        font-size: 25px; }
-      #offer .col-md-8 .img .content {
+      #offer .col-md-9 .img p {
+        font-size: 25px;
+        margin: 5px; }
+      #offer .col-md-9 .img .content {
         font-size: 13px; }
-      #offer .col-md-8 .img a {
+      #offer .col-md-9 .img a {
         color: #cccccc;
         padding: 5px; }
-      #offer .col-md-8 .img a:hover {
+      #offer .col-md-9 .img a:hover {
         color: #FF9400;
         border: 1px solid #FF9400;
         text-decoration: none; }

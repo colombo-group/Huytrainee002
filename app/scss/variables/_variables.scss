@@ -11,6 +11,15 @@
   	font-family: hevertical;
   	src: url('../fonts/HelveticaNeueLTStd-UltLtCn.otf');
   }
+    @font-face{
+  	font-family: robo;
+  	src: url('../fonts/Roboto-Light.ttf');
+  }
+  @font-face{
+  	font-family: robo-con;
+  	src: url('../fonts/Roboto-Condensed.ttf');}
+  $font-robo-conden:robo-con;
+  $font-robo:robo;
  $color-gray:#8F8F8F;
  $font-vertical:hevertical;
 $pt-font:ptsan;

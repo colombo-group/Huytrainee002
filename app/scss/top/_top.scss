@@ -1,15 +1,29 @@
 body{
 	margin:0px;
 	padding:0px;
+	font-family:$font-robo;
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+.container-fluid{
+	padding:0px;
+}
 #top{
 	background:#0466BE;
+	width: 100%;
 	font-size:10px;
 	height:25px;
+	// margin-left:0px;
+	.left-top{
+		float: left;
+		// padding-left: 0px;
+		width: 70%;
+		ul{
+			margin-left: -55px;
+		}
+	}
 	ul{
 		list-style: none;
 		li{
@@ -29,14 +43,15 @@ body{
 		}
 	} 
 	span,i{
-		line-height: 25px;
+		line-height: 20px;
 		font-size: 11px;
 		color: darken(white,30%);
 	}
 	.right-top{
+		margin-right: 0px;	
 			
 			a{
-				line-height: 25px;
+				line-height: 20px;
 				padding-left:15px;
 				padding-right: 15px;
 				border-left: 1px dotted darken(white,30%);
